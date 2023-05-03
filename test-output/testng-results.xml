@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="16" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-03T17:42:56 IST" name="Suite" finished-at="2023-05-03T17:43:20 IST" duration-ms="23631">
+    <groups>
+    </groups>
+    <test started-at="2023-05-03T17:42:56 IST" name="HomePageTest" finished-at="2023-05-03T17:43:15 IST" duration-ms="18789">
+      <class name="SauceDemo.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:42:56 IST" name="setup" finished-at="2023-05-03T17:43:04 IST" duration-ms="8388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPageValidation()[pri:1, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:04 IST" name="loginPageValidation" finished-at="2023-05-03T17:43:05 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageValidation -->
+        <test-method signature="testLogin()[pri:2, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:05 IST" name="testLogin" finished-at="2023-05-03T17:43:05 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogout()[pri:3, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:05 IST" name="testLogout" finished-at="2023-05-03T17:43:06 IST" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method signature="TestLogin(java.lang.Object)[pri:5, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:07 IST" name="TestLogin" data-provider="testData" finished-at="2023-05-03T17:43:08 IST" duration-ms="671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method signature="TestLogin(java.lang.Object)[pri:5, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:08 IST" name="TestLogin" data-provider="testData" finished-at="2023-05-03T17:43:08 IST" duration-ms="70" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method signature="TestLogin(java.lang.Object)[pri:5, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:08 IST" name="TestLogin" data-provider="testData" finished-at="2023-05-03T17:43:09 IST" duration-ms="668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method signature="TestLogin(java.lang.Object)[pri:5, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:09 IST" name="TestLogin" data-provider="testData" finished-at="2023-05-03T17:43:15 IST" duration-ms="5666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemo.LoginPageTest@3148f668]" started-at="2023-05-03T17:43:15 IST" name="tearDown" finished-at="2023-05-03T17:43:15 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SauceDemo.LoginPageTest -->
+    </test> <!-- HomePageTest -->
+    <test started-at="2023-05-03T17:43:16 IST" name="LoginPageTest" finished-at="2023-05-03T17:43:20 IST" duration-ms="4111">
+      <class name="SauceDemo.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:16 IST" name="setup" finished-at="2023-05-03T17:43:18 IST" duration-ms="1923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:1, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:18 IST" name="testLogin" finished-at="2023-05-03T17:43:18 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="verifyProduct()[pri:2, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:18 IST" name="verifyProduct" finished-at="2023-05-03T17:43:18 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct -->
+        <test-method signature="addToCart()[pri:3, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:18 IST" name="addToCart" finished-at="2023-05-03T17:43:18 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method signature="goToCart()[pri:4, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:18 IST" name="goToCart" finished-at="2023-05-03T17:43:18 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCart -->
+        <test-method signature="removeFromCart()[pri:5, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:19 IST" name="removeFromCart" finished-at="2023-05-03T17:43:19 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeFromCart -->
+        <test-method signature="addTwoProductToCart()[pri:6, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:19 IST" name="addTwoProductToCart" finished-at="2023-05-03T17:43:19 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTwoProductToCart -->
+        <test-method signature="checkOut()[pri:7, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:19 IST" name="checkOut" finished-at="2023-05-03T17:43:19 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOut -->
+        <test-method signature="backToHomePage()[pri:8, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:19 IST" name="backToHomePage" finished-at="2023-05-03T17:43:19 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backToHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SauceDemo.HomePageTest@413f69cc]" started-at="2023-05-03T17:43:20 IST" name="tearDown" finished-at="2023-05-03T17:43:20 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SauceDemo.HomePageTest -->
+    </test> <!-- LoginPageTest -->
+  </suite> <!-- Suite -->
+</testng-results>
