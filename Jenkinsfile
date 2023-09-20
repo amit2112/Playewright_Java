@@ -31,7 +31,7 @@ pipeline {
 	            steps{
 	            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
 	                git 'https://github.com/amit2112/Playewright_Java.git'
-	                sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resource/testngRegression.xml'
+	                sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resource/testng.xml'
 		            }
 		        }
 		     }
