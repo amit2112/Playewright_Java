@@ -30,7 +30,7 @@ pipeline {
         stage('Regression Automation Test'){
             steps{
                 git 'https://github.com/amit2112/Playewright_Java'
-                sh 'mvn clean -Dsurefire.suiteXmlFiles=testng.xml'
+                sh 'mvn clean test -Dsurefire.suiteXmlFiles=testng.xml'
             }
         }
         
