@@ -1,22 +1,12 @@
 package baseTest;
 
 import static org.testng.Assert.assertEquals;
-
-import java.awt.Button;
 import java.nio.file.Paths;
-
-import javax.lang.model.element.Element;
-
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-import org.xml.sax.ext.Locator2Impl;
-import org.yaml.snakeyaml.LoaderOptions;
-
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.options.MouseButton;
 
 public class Sample {
 
