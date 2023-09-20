@@ -10,7 +10,7 @@ pipeline {
         stage('Build'){
             steps{
                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                sh 'mvn -Dmaven.test.failure.ignore=true clean package'
             }
             
             post{
@@ -29,8 +29,8 @@ pipeline {
         
         stage('Regression Automation Test'){
             steps{
-                git 'https://github.com/amit2112/Playewright_Java'
-                sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resource/testngRegression.xml"
+                git 'https://github.com/amit2112/Playewright_Java.git'
+                sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resource/testngRegression.xml'
             }
         }
         
