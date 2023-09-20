@@ -73,7 +73,7 @@
 						<reuseForks>true</reuseForks>
 						<argLine>-Xmx1024m -XX:maxPermSize=256m</argLine>
 						<suiteXmlFiles>
-							<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+							<suiteXmlFile>src/test/resource/testngRegression.xml}</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
