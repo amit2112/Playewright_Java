@@ -1,9 +1,0 @@
-# Created at 2023-09-20T16:00:53.173
-Unrecognized VM option 'maxPermSize=256m'
-
-# Created at 2023-09-20T16:00:53.174
-Error: Could not create the Java Virtual Machine.
-
-# Created at 2023-09-20T16:00:53.174
-Error: A fatal exception has occurred. Program will exit.
-
