@@ -17,7 +17,7 @@ import static ExtentFactory.PWFactory.takeScreenshot;
 
 public class ExtentListener implements ITestListener {
 
-	private static final String OUTPUT_FOLDER = "./test-output/extentReport/";
+	private static final String OUTPUT_FOLDER = "./build/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
 
 	private static ExtentReports extent = init();
