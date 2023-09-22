@@ -80,7 +80,7 @@
 						<reuseForks>true</reuseForks>
 					 	<argLine>-Xmx1024m -XX:maxPermSize=256m</argLine> -->
 						<suiteXmlFiles>
-							<suiteXmlFile>src/test/resource/testng.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
