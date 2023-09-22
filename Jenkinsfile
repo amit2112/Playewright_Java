@@ -1,5 +1,9 @@
 pipeline {
-    agent { docker { image 'mcr.microsoft.com/playwright:focal' } }
+    agent { 
+    	docker { 
+    	image 'mcr.microsoft.com/playwright:focal' 
+    		} 
+    	}
     
     tools{
         maven 'maven'
