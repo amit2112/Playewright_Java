@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { docker { image 'mcr.microsoft.com/playwright/java:v1.38.0-jammy' } }
     
     tools{
         maven 'maven'
@@ -31,7 +31,6 @@ pipeline {
 	            steps{
 	            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
 	                git 'https://github.com/amit2112/Playewright_Java.git'
-	                sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps chromium"'
 	                sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml'
 		            }
 		        }
