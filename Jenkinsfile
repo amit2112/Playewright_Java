@@ -1,9 +1,5 @@
 pipeline {
-    agent { 
-    	docker { 
-    	image 'mcr.microsoft.com/playwright:focal' 
-    		} 
-    	}
+    agent any
     
     tools{
         maven 'maven'
@@ -35,6 +31,7 @@ pipeline {
 	            steps{
 	            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
 	                git 'https://github.com/amit2112/Playewright_Java.git'
+	                sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"'
 	                sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml'
 		            }
 		        }
