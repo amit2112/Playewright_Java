@@ -76,11 +76,11 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.1.2</version>
 					<configuration>
-						<forkCount>3</forkCount>
+						<!--	<forkCount>3</forkCount>
 						<reuseForks>true</reuseForks>
-					 	<argLine>-Xmx1024m -XX:maxPermSize=256m</argLine>
+					 	<argLine>-Xmx1024m -XX:maxPermSize=256m</argLine> -->
 						<suiteXmlFiles>
-							<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resource/testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
