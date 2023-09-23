@@ -42,8 +42,8 @@ pipeline {
 	            steps{
 	                publishHTML([allowMissing:false, 
 	                alwaysLinkToLastBuild:false,
-	                keppAll:true,
-	                reportDirectory:'build',
+	                keepAll:true,
+	                reportDir:'build',
 	                reportFiles: 'TestExecutionReport.html',
 	                reportName:'HTML Extent Report',
 	                reportTitles:''])}
