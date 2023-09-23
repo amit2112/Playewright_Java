@@ -1,11 +1,13 @@
 pipeline {
     agent { docker { image 'mcr.microsoft.com/playwright/java:v1.38.0-jammy' } }
     
-    tools{
-        maven 'maven'
-    	}
-
     stages {
+    
+    		stage('Playwright Setup') {
+		         steps {
+		            sh 'mvn -B install -D skipTests --no-transfer-progress'
+		            }
+		         }
         
 	        stage('Build') {
 	            steps{
