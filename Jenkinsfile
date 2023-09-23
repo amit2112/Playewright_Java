@@ -1,14 +1,7 @@
 pipeline {
-    agent { docker { image 'mcr.microsoft.com/playwright/java:v1.38.0-jammy' } }
+    agent any
     
-    stages {
-    
-    		stage('Playwright Setup') {
-		         steps {
-		            sh 'mvn -B install -D skipTests --no-transfer-progress'
-		            }
-		         }
-        
+    stages {    
 	        stage('Build') {
 	            steps{
 	                git 'https://github.com/jglick/simple-maven-project-with-tests.git'
