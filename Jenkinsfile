@@ -20,7 +20,7 @@ pipeline {
 		        stage('Build') {
 		            steps{
 		                git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-		                sh 'mvn clean package dependency:go-offline -Dmaven.test.failure.ignore=true'
+		                sh 'mvn clean test dependency:go-offline -Dmaven.test.failure.ignore=true'
 		            	}
 		            
 		            post{
