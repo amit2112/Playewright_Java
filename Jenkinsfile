@@ -27,7 +27,7 @@ pipeline {
 		            steps{
 		            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
 		                git 'https://github.com/amit2112/Playewright_Java.git'
-		                sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps chromium"'
+		                sh 'mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps chromium dependency:go-offline"'
 		                sh 'xvfb-run mvn clean test dependency:go-offline -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml'
 			            }
 			        }
