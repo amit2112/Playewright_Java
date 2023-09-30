@@ -1,21 +1,19 @@
 pipeline {
 
-	environment {
-      JAVA_TOOL_OPTIONS = '-Duser.home=/root'
-    	}
-
     agent { 
     	docker { 
     		image 'mcr.microsoft.com/playwright/java:v1.38.0-jammy' 
-    		image 'maven:3-alpine' 
-            args '-v /var/jenkins_home:/root'
     		} 
     	}
+    	
+    tools{
+    	maven 'maven'
+        }
     
     stages {
 		      stage('Playwright Setup') {
 		         steps {
-		            sh 'mvn -B install -D skipTests --no-transfer-progress'
+		            sh 'mvn -B install -D skipTests --no-transfer-progress dependency:go-offline'
 		            	}
 		           	}     
 		           	
