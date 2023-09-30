@@ -1,13 +1,12 @@
 pipeline {
-	environment {
-      JAVA_TOOL_OPTIONS = '-Duser.home=/root'
-    }
 
-    agent { docker { image 'mcr.microsoft.com/playwright/java:v1.38.0-jammy' } }
-    
-    tools{
-    	maven 'maven'
-        }
+    agent { 
+    	docker { 
+    		image 'mcr.microsoft.com/playwright/java:v1.38.0-jammy' 
+    		image 'maven:3-alpine' 
+            args '-v /root/.m2:/root/.m2'
+    		} 
+    	}
     
     stages {
 		      stage('Playwright Setup') {
