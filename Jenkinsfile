@@ -1,4 +1,8 @@
 pipeline {
+	environment {
+      JAVA_TOOL_OPTIONS = '-Duser.home=/root'
+    }
+
     agent { docker { image 'mcr.microsoft.com/playwright/java:v1.38.0-jammy' } }
     
     tools{
