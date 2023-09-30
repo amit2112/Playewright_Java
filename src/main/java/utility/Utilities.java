@@ -14,7 +14,7 @@ public class Utilities {
 
 		try {
 			Fillo fillo = new Fillo();
-			Connection connection = fillo.getConnection("//${workspace}/src/test/resources/TestData_Result.xlsx");
+			Connection connection = fillo.getConnection("/var/jenkins_home/workspace/PW_CI_CD_Pipeline/src/test/resources/TestData_Result.xlsx");
 			String query = "Select * From Sheet1 where ID="+id;
 			recordset = connection.executeQuery(query);
 			count  = recordset.getCount();
